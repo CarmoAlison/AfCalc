@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculo Informática</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="imagens/Logo.jpg" type="image/x-icon">
+      <link rel="shortcut icon" href="imagens/Logo.jpg" type="image/x-icon">
+  </head>
+  <body
+    style="
+      background-image: url(imagens/backgroundQui.jpg);
+      background-position: 100%;
+      background-size: cover;
+    "
+  >
+    <header>
+      <nav>
+        <div class="nav">
+          <div class="menu" id="menu">
+            <img
+              src="imagens/menu-aberto.png"
+              alt=""
+              onclick="MenuLateral()"
+              id="menuClick"
+            />
+          </div>
+          <div class="logo-nav">
+            <img src="imagens/Logo.jpg" alt="" />
+          </div>
+          <ul id="navMenu">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li >
+              <a href="calculoInformatica.html">Cálculo informática</a>
+            </li>
+            <li id="li-pronto">
+              <a href="calculoquimica.html">Cálculo Química</a>
+            </li>
+            <li>
+              <a href="calculorp.html">Cálculo Recursos pesqueiros</a>
+            </li>
+          </ul>
+        </div>
+        <div class="bloco-menu"></div>
+        <div id="menuLateral">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="calculoInformatica.html">Cálculo informática</a>
+            </li>
+            <li id="li-pronto">
+              <a href="calculoquimica.html">Cálculo Química</a>
+            </li>
+            <li>
+              <a href="calculorp.html">Cálculo Recursos pesqueiros</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      
+      <section class="hidden">
+      <div class="calcularInformatica">
+        <div class="calcularInformatica-corp">
+          <h1>Cálculo Química</h1>
+          <hr />
+          <label for="" id="nomeBim">1° Bimestre</label><br />
+          <input type="number" name="Bimestre1" id="Bim1" /><br />
+          <label for="" id="nomeBim">2° Bimestre</label><br />
+          <input type="number" name="Bimestre2" id="Bim2" /><br />
+          <label for="" id="nomeBim">3° Bimestre</label><br />
+          <input type="number" name="Bimestre3" id="Bim3" /><br />
+          <label for="" id="nomeBim">4° Bimestre</label><br />
+          <input type="number" name="Bimestre4" id="Bim4" /><br />
+
+          <button type="submit" onclick="calcular()">Cálcular</button>
+          <br><br>
+
+           <h4 id="resultadoTexto">Quanto eu tirei?😅</h4>
+           <p id="resultadoMedia">???</p>
+        </div>
+      </div>
+      
+      <section class="hidden">
+    </main>
+    <footer>
+        <div class="footer1">
+          <div class="logo-footer">
+            <img src="imagens/Logo.jpg" alt="" />
+          </div>
+  
+          <div class="textos-footer">
+            <hr>
+            <div class="inicio-text">
+                <h1>Início</h1>
+                <a href="index.html"><p>Home</p></a>
+                <a href="calculoInformatica.html"><p>Informática</p></a>
+                <a href="calculoquimica.html"><p>Química</p></a>
+                <a href="calculorp.html"><p>Recursos pesqueiros</p></a>
+              </div>
+            <div class="sobre-nos-text">
+              <h1>Sobre-nós</h1>
+              <a href="#alison">
+                <p>Informações sobre Alison</p>
+              </a>
+              <a href="#felipe">
+                <p>Informações sobre Felipe</p>
+              </a>
+            </div>
+            <hr>
+          </div>
+          <div class="icones-meninos">
+            <h1>Fale com Alison por aqui:</h1>
+            <div class="icones-alison">
+              <div class="inst">
+                <a href="https://www.instagram.com/alison_tkd/"><img src="imagens/insta.png" alt="" /></a>
+              </div>
+              <div class="whats">
+                <a href="https://web.whatsapp.com/send?phone=558496002433&text=Ol%C3%A1!%20estou%20no%20site%20da%20AfCalc,%20na%20p%C3%A1gina%20https://AfCalc.com.br%20e%20tenho%20interesse,%20pode%20me%20ajudar?">
+                  <img src="imagens/whats.png" alt="" /></a>
+              </div>
+              <div class="tel">
+                <a href="tel:8496002433"><img src="imagens/tel.png" alt="" /></a>
+              </div>
+            </div>
+            <br />
+            <hr />
+            <br />
+            <h1>Fale com Felipe por aqui:</h1>
+            <div class="icones-felipe">
+              <div class="icones-alison">
+                <div class="inst">
+                  <a href="https://www.instagram.com/_felipeteixeir/"><img src="imagens/insta.png" alt="" /></a>
+                </div>
+                <div class="whats">
+                  <a href="https://web.whatsapp.com/send?phone=558488451599&text=Ol%C3%A1!%20estou%20no%20site%20da%20AfCalc,%20na%20p%C3%A1gina%20https://AfCalc.com.br%20e%20tenho%20interesse,%20pode%20me%20ajudar?"><img src="imagens/whats.png" alt="" /></a>
+                </div>
+                <div class="tel">
+                  <a href="tel:8488451599"><img src="imagens/tel.png" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer2">
+          <div class="copyrigth">&copy; 2024 Copyrigth -  Programador IFRN</div>
+        </div>
+      </footer>
+  
+    <script>
+      function MenuLateral() {
+        if (menuLateral.style.display == "block") {
+          menuLateral.style.display = "none";
+        } else {
+          menuLateral.style.display = "block";
+        }
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
